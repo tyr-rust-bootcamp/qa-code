@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 anyhow = "1.0.83"
+arc-swap = "1.7.1"
 crossbeam-channel = "0.5.12"
