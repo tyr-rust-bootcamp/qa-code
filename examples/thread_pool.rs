@@ -12,7 +12,7 @@ type Job = Box<dyn FnOnce() + Send + 'static>;
 #[allow(dead_code)]
 struct ThreadPool {
     workers: Vec<thread::JoinHandle<()>>,
-    sender: Option<mpsc::Sender<Box<dyn FnOnce() + Send + 'static>>>,
+    sender: Option<mpsc::Sender<Job>>,
 }
 
 impl ThreadPool {
