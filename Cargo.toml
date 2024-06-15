@@ -9,3 +9,5 @@ edition = "2021"
 anyhow = "1.0.83"
 arc-swap = "1.7.1"
 crossbeam-channel = "0.5.12"
+serde = { version = "1.0.203", features = ["derive"] }
+serde_yaml = "0.9.34"

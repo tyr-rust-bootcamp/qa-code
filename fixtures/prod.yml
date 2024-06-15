@@ -1,0 +1,5 @@
+server:
+  port: 80
+
+database:
+  host: db.acme.com:5432
