@@ -7,7 +7,6 @@ fn main() {
         tracing_appender::rolling::daily("/tmp/logs", "info.log").with_max_level(Level::INFO);
     let error =
         tracing_appender::rolling::daily("/tmp/logs", "error.log").with_max_level(Level::ERROR);
-    // Create a log file writer that directs `INFO` logs to `info.log` and `ERROR` logs to `error.log`
     let stdout = std::io::stdout.with_max_level(tracing::Level::INFO);
 
     tracing_subscriber::fmt()
