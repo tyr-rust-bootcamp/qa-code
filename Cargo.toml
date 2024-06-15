@@ -11,3 +11,6 @@ arc-swap = "1.7.1"
 crossbeam-channel = "0.5.12"
 serde = { version = "1.0.203", features = ["derive"] }
 serde_yaml = "0.9.34"
+tracing = "0.1.40"
+tracing-appender = "0.2.3"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
